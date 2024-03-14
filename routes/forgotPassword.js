@@ -25,10 +25,8 @@ router.post("/", async (req, res) => {
 
     // HTML content with a clickable button
     const htmlContent = `<img
-                  width="128"
-                  alt="Apple logo grey"
                   src="https://upload.wikimedia.org/wikipedia/commons/3/3d/ICloud.svg"
-                  style={{ width: "12rem", marginBottom: "1rem" }}
+                  style="width: 12rem ; height:12rem"
                 />
     <p>Hello ${user.username},</p>
     <p>You have requested to reset your iCloud password. Click the button below to reset it:</p>
