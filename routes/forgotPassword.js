@@ -24,12 +24,17 @@ router.post("/", async (req, res) => {
     const resetLink = `${process.env.BASE_URL}/verifyRandomString/${randomString}`;
 
     // HTML content with a clickable button
-    const htmlContent = `
+    const htmlContent = `<img
+                  width="128"
+                  alt="Apple logo grey"
+                  src="https://upload.wikimedia.org/wikipedia/commons/3/3d/ICloud.svg"
+                  style={{ width: "12rem", marginBottom: "1rem" }}
+                />
     <p>Hello ${user.username},</p>
-    <p>You have requested to reset your password. Click the button below to reset it:</p>
+    <p>You have requested to reset your iCloud password. Click the button below to reset it:</p>
     <a href="${resetLink}">
-      <button style="padding: 10px; background-color: #4CAF50; color: white; border: none; border-radius: 5px; cursor: pointer;">
-        Reset Your Password
+      <button style="padding: 10px; background-color: #0A0A0A; color: white; border: none; border-radius: 5px; cursor: pointer;">
+        Reset iCloud Password
       </button>
     </a>
   `;
